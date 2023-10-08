@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Story"
+        android:id="@+id/storyMap"
+        android:icon="@drawable/map"/>
+
+    <item android:title="360°"
+        android:id="@+id/vr"
+        android:icon="@drawable/vr"/>
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"/>
+
+    <item android:title="Store"
+        android:id="@+id/store"
+        android:icon="@drawable/store"/>
+
+    <item android:title="Success"
+        android:id="@+id/achievement"
+        android:icon="@drawable/basarim"/>
+</menu>

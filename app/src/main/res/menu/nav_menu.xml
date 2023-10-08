@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+
+
+    <item
+        android:id="@+id/rateUs"
+        android:title="Rate us"
+        android:icon="@drawable/rate_us" />
+
+    <item
+        android:id="@+id/followUs"
+        android:title="Follow us"
+        android:icon="@drawable/follow" />
+
+    <item
+        android:id="@+id/helpAndFaq"
+        android:title="Help and FAQ"
+        android:icon="@drawable/help" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings">
+
+        <menu>
+
+            <item
+                android:id="@+id/language"
+                android:title="Language"
+                android:icon="@drawable/language" />
+
+            <item
+                android:id="@+id/profile_status"
+                android:title="Profile Status"
+                android:icon="@drawable/person" />
+
+            <item
+                android:id="@+id/sound"
+                android:title="Sound"
+                android:icon="@drawable/sound" />
+
+            <item
+                android:id="@+id/notification"
+                android:title="Notification"
+                android:icon="@drawable/baseline_notifications_24" />
+
+            <item
+                android:id="@+id/terms"
+                android:title="Terms Privacy Policy"
+                android:icon="@drawable/baseline_privacy_tip_24" />
+
+        </menu>
+
+    </item>
+
+</menu>

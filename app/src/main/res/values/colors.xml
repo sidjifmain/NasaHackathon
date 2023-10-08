@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#063594</color>
+    <color name="primary_color">#7A37F1</color>
+    <color name="red">#D10808</color>
+    <color name="yellow">#FFBF00</color>
+    <color name="map_color">#32008A</color>
+    <color name="aciq_blue">#5A0DE1</color>
+    <color name="orange">#B1670C</color>
+    <color name="purple">#3B0363</color>
+    <color name="blue_tunde">#011547</color>
+    <color name="green">#0A6C07</color>
+
+
+
+</resources>

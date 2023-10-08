@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="342dp"
+        android:layout_height="495dp"
+        android:src="@drawable/store4" />
+
+    <TextView
+        android:id="@+id/azer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start|top"
+        android:text="Read the text \ncarefully and \nanswer the \nquestions correctly"
+        android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+    <!-- Diğer bileşenleri burada ekleyebilirsiniz, örneğin metin, düğmeler vb. -->
+
+</LinearLayout>
