@@ -40,8 +40,8 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <ScrollView
-        android:layout_width="341dp"
-        android:layout_height="346dp"
+        android:layout_width="337dp"
+        android:layout_height="284dp"
         android:layout_marginTop="16dp"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="@+id/storyImg"
@@ -55,8 +55,9 @@
             android:layout_height="match_parent"
             android:layout_marginTop="34dp"
             android:fontFamily="@font/changa_semibold"
-            android:textColor="@color/white"
+            android:text="@string/lorem_ipsum"
 
+            android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/storyImg"
             app:layout_constraintStart_toStartOf="@+id/storyImg"
@@ -65,8 +66,8 @@
 
     <Button
         android:id="@+id/btn_next"
-        android:layout_width="387dp"
-        android:layout_height="66dp"
+        android:layout_width="392dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="32dp"
         android:background="@color/black"
         android:text="Press to continue -->"

@@ -32,7 +32,7 @@ class StoryPage : AppCompatActivity() {
         var text5 = "Do you see the mountains and craters on the Moon's surface? They were formed a long time ago by meteors colliding with the Moon. Humans first set foot on the Moon in 1969 during the Apollo 11 mission. Oh, and don't forget, Ali, jumping high on the Moon is much easier and fun due to the Moon's weak gravity.'"
         var text6 = "Ali was deeply impressed by his father's answers. 'Dad, the Moon seems truly magical. Thank you, learning such wonderful things with you is amazing!'Smiling, his father hugged Ali. 'Yes, Ali, the Moon is indeed a marvelous place. Now let's watch the sky to discover more. Who knows, maybe one day you will want to go to the Moon too!"
 
-        writeText(text1)
+        writeText(text1,2500)
         binding.storyImg.setImageResource(R.drawable.pic1)
 
         var saygac = 1
@@ -42,27 +42,28 @@ class StoryPage : AppCompatActivity() {
             if (saygac == 2){
                 binding.storyImg.setImageResource(R.drawable.pic2)
                 binding.btnNext.visibility = View.INVISIBLE
-                writeText(text2)
+                writeText(text2,2500)
             }
             else if (saygac == 3){
-                binding.storyImg.setImageResource(R.drawable.pic5)
-                binding.btnNext.visibility = View.INVISIBLE
-                writeText(text3)
+//                binding.storyImg.setImageResource(R.drawable.pic5)
+//                binding.btnNext.visibility = View.INVISIBLE
+//                writeText(text3,2500)
+                binding.storyText.text = text3
             }
             else if (saygac == 4){
                 binding.storyImg.setImageResource(R.drawable.pic6)
                 binding.btnNext.visibility = View.INVISIBLE
-                writeText(text4)
+                writeText(text4,2500)
             }
             else if (saygac == 5){
                 binding.storyImg.setImageResource(R.drawable.pic4)
                 binding.btnNext.visibility = View.INVISIBLE
-                writeText(text5)
+                writeText(text5,2500)
             }
             else if (saygac == 6){
                 binding.storyImg.setImageResource(R.drawable.pic3)
                 binding.btnNext.visibility = View.INVISIBLE
-                writeText(text6)
+                writeText(text6 , 2500)
             }
             else{
                 saygac = 0
@@ -74,19 +75,16 @@ class StoryPage : AppCompatActivity() {
 
 
 
-
-
-
     }
 
-    fun writeText(text : String){
+    fun writeText(text : String , duration: Long){
         val handler = Handler()
 
-        animateTextSlowly(binding.storyText , text , 2500 , 200)
+        animateTextSlowly(binding.storyText , text , duration , 500)
 
         handler.postDelayed({
             binding.btnNext.visibility = View.VISIBLE
-        }, 3000)
+        }, 10000)
     }
 
     fun animateTextSlowly(textView: TextView, text: String, duration: Long, delay: Long) {
@@ -103,6 +101,8 @@ class StoryPage : AppCompatActivity() {
                 handler.postDelayed({
                     animateText()
                 }, interval)
+            } else {
+
             }
         }
 

@@ -66,7 +66,7 @@
                     android:layout_toRightOf="@id/hambur"
                     android:layout_alignTop="@id/hambur"
                     android:layout_marginStart="16dp"
-                />
+                    />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -75,7 +75,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="5dp"
-                    android:src="@drawable/notification2" />
+                    android:src="@drawable/notification2"
+                    />
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -85,7 +86,8 @@
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="3dp"
                     android:layout_toLeftOf="@id/imageView3"
-                    android:src="@drawable/star" />
+                    android:src="@drawable/star"
+                    />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -95,7 +97,8 @@
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="3dp"
                     android:layout_toLeftOf="@id/imageView5"
-                    android:src="@drawable/baseline_heart_broken_24" />
+                    android:src="@drawable/baseline_heart_broken_24"
+                    />
 
                 <TextView
                     android:id="@+id/tv56"
@@ -106,23 +109,27 @@
                     android:gravity="center"
                     android:text="5x"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    />
 
                 <Button
                     android:id="@+id/pro"
-                    android:layout_width="101dp"
+                    android:layout_width="130dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="7dp"
                     android:layout_marginBottom="3dp"
                     android:layout_toLeftOf="@id/tv56"
+                    android:layout_alignBaseline="@id/tv56"
                     android:background="@drawable/pro_btn"
-                    android:gravity="end"
-                    android:padding="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingBottom="8dp"
                     android:text="Upgrade"
-                    android:textSize="8sp" />
+                    android:textSize="9sp"
+                />
 
 
             </RelativeLayout>
+
 
 
 

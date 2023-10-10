@@ -1,102 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".LevelChooeing">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="0%"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button11"
-        app:layout_constraintStart_toEndOf="@+id/button11"
-        app:layout_constraintTop_toTopOf="@+id/button11" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"
+        >
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="22%"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button10"
-        app:layout_constraintStart_toEndOf="@+id/button10"
-        app:layout_constraintTop_toTopOf="@+id/button10" />
+        <!-- CardView 1 -->
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="97%"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/lvl2"
-        app:layout_constraintStart_toEndOf="@+id/lvl2"
-        app:layout_constraintTop_toTopOf="@+id/lvl2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="54%"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/lvl1"
-        app:layout_constraintStart_toEndOf="@+id/lvl1"
-        app:layout_constraintTop_toTopOf="@+id/lvl1" />
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/lvl1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:background="@color/yellow"
-        android:text="LEVEL 1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/lvl2"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/green"
-        android:text="LEVEL 2"
-        app:layout_constraintEnd_toEndOf="@+id/lvl1"
-        app:layout_constraintStart_toStartOf="@+id/lvl1"
-        app:layout_constraintTop_toBottomOf="@+id/lvl1" />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Başlık 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/red"
-        android:text="LEVEL 3"
-        app:layout_constraintEnd_toEndOf="@+id/lvl2"
-        app:layout_constraintStart_toStartOf="@+id/lvl2"
-        app:layout_constraintTop_toBottomOf="@+id/lvl2" />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Açıklama 2"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="LEVEL 4"
-        app:layout_constraintEnd_toEndOf="@+id/button10"
-        app:layout_constraintStart_toStartOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+                <Button
+                    android:id="@+id/lvl1_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:text="PLAY" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Başlık 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Açıklama 2"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Düğme 2" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Daha fazla CardView eklemek için aynı yapıyı kullanabilirsiniz -->
+
+    </LinearLayout>
+</ScrollView>
+
+

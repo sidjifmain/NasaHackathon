@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="350dp"
     android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/orange">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/orange"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp">
 
+
     <Button
-        android:id="@+id/close"
+        android:id="@+id/closeButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="170dp"
+        android:layout_gravity="end|top"
+
         android:background="@drawable/close" />
 
     <ImageView
@@ -28,7 +39,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Pro Version"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -37,8 +47,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
         android:text="You can have additional features and advantages with the Pro version"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -46,7 +54,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="Pro Version Benefits:"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -54,7 +61,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="✓ Ad-free experience\n ✓ Additional features\n ✓ Fast access\n ✓ Premium content\n"
         android:textColor="@color/white"
         android:textStyle="bold" />
@@ -63,12 +69,11 @@
         android:id="@+id/buyProButton"
         android:layout_width="149dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="100dp"
-        android:background="@color/purple"
+        android:background="@drawable/buy_btn_background"
         android:text="Buy Now !"
         android:textColor="@color/white" />
 
 </LinearLayout>
 
+</androidx.cardview.widget.CardView>
 
