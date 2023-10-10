@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:background="@color/primary_color"
         android:gravity="center"
         android:orientation="vertical"
@@ -36,7 +36,7 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <!-- Switch ve On/Off metinleri -->
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
             android:layout_marginBottom="40dp"
             android:orientation="horizontal">
 
-            <!-- "On" Metni -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,9 +52,9 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
-            <!-- Switch -->
+
             <Switch
-                android:id="@+id/onOffSwitch"
+                android:id="@+id/onOffSwitchSound"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -63,7 +63,6 @@
                 android:thumbTint="@color/purple"
                 android:trackTint="@color/white" />
 
-            <!-- "Off" Metni -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,5 +71,52 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
+
+        <!-- Sound Yazısı -->
+        <TextView
+            android:id="@+id/musicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Music"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+            <Switch
+                android:id="@+id/onOffSwitchMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:thumbTint="@color/purple"
+                android:trackTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="On"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>

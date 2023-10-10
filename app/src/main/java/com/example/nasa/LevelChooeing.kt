@@ -25,5 +25,10 @@ class LevelChooeing : AppCompatActivity() {
         }
 
 
+        binding.lvl2Btn.setOnClickListener{
+            val intent = Intent(this@LevelChooeing , Choosing::class.java)
+            startActivity(intent)
+        }
+
     }
 }

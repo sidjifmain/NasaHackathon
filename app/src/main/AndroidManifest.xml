@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Nasa"
         tools:targetApi="31">
         <activity
+            android:name=".Choosing"
+            android:exported="false" />
+        <activity
             android:name=".LevelChooeing"
             android:exported="false" />
         <activity

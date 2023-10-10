@@ -1,18 +1,18 @@
 package com.example.nasa
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.media.AudioManager
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.os.Handler
+import android.os.Looper
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.PopupWindow
@@ -34,6 +34,10 @@ class HomePage : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        Handler(Looper.getMainLooper()).postDelayed({
+            tanitim()
+        }, 1000)
+
         var menu = binding.bottomNavBar.menu
         menu.findItem(R.id.home).isChecked = true
         replaceFragment(com.example.nasa.HomeFragment())
@@ -47,6 +51,14 @@ class HomePage : AppCompatActivity() {
 
         binding.pro.setOnClickListener{
             showPopupWindow()
+        }
+
+        binding.logoBtn.setOnClickListener {
+            tanitim()
+        }
+
+        binding.btnNotification.setOnClickListener {
+            notifications()
         }
 
 
@@ -176,7 +188,7 @@ class HomePage : AppCompatActivity() {
             popupWindow.dismiss()
         }
 
-        val onOffSwitch = popupView.findViewById<Switch>(R.id.onOffSwitch)
+        val onOffSwitch = popupView.findViewById<Switch>(R.id.onOffSwitchSound)
 
 
         onOffSwitch.isChecked = mediaPlayer.isPlaying
@@ -193,6 +205,37 @@ class HomePage : AppCompatActivity() {
                 }
             }
         }
+
+
+    }
+
+    private fun notifications() {
+
+        val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val popupView: View = inflater.inflate(R.layout.notflications, null)
+
+        val popupWindow = PopupWindow(
+            popupView,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            true
+        )
+
+
+        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)
+
+
+
+
+        val closeButton: Button = popupView.findViewById(R.id.closeButton)
+        closeButton.setOnClickListener {
+            popupWindow.dismiss()
+        }
+
+
+
+
+
 
 
     }
@@ -219,7 +262,7 @@ class HomePage : AppCompatActivity() {
         val check2 = popupView.findViewById<CheckBox>(R.id.checkBox2)
         val check3 = popupView.findViewById<CheckBox>(R.id.checkBox3)
 
-        check1.isChecked = true
+        check2.isChecked = true
 
         check1.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
@@ -253,6 +296,29 @@ class HomePage : AppCompatActivity() {
 
 
     }
+
+
+    private fun tanitim() {
+        val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val popupView: View = inflater.inflate(R.layout.tanitma, null)
+
+        val popupWindow = PopupWindow(
+            popupView,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            true
+        )
+
+        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)
+
+        val closeButton: Button = popupView.findViewById(R.id.ok_btn)
+        closeButton.setOnClickListener {
+            popupWindow.dismiss()
+        }
+    }
+
+
+
 
 
 

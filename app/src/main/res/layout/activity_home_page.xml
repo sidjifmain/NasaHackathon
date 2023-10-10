@@ -59,7 +59,7 @@
                     android:background="@drawable/hambur" />
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/logo_btn"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/logo"
@@ -69,7 +69,7 @@
                     />
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/btn_notification"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
@@ -85,7 +85,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="3dp"
-                    android:layout_toLeftOf="@id/imageView3"
+                    android:layout_toLeftOf="@id/btn_notification"
                     android:src="@drawable/star"
                     />
 

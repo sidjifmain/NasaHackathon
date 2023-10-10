@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/yuvarlak_sari_buton.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Kenarları yuvarlak yapmak için bir köşe yarıçapı ayarlayın -->
+    <corners android:radius="30dp" />
+
+    <!-- Sarı arka plan rengi -->
+    <solid android:color="#FFFF00" />
+
+    <!-- İsteğe bağlı olarak kenarlık ekleyebilirsiniz -->
+    <stroke
+        android:width="6dp"
+        android:color="#051571" />
+</shape>

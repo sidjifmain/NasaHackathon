@@ -61,7 +61,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="✓ Ad-free experience\n ✓ Additional features\n ✓ Fast access\n ✓ Premium content\n"
+        android:text=" ✓ No Adds\n ✓ Unlimited hearts\n ✓ Certificate chance\n ✓be able to unlock other planets\n 2,99$ monthly \n 30$ annual"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
