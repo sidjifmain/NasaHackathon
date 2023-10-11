@@ -31,7 +31,7 @@
                     android:layout_width="190dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/logo" />
+                    android:src="@drawable/pic1" />
 
 
                 <TextView
@@ -40,7 +40,7 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="Başlık 2"
+                    android:text="Level 1"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
@@ -50,7 +50,7 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="Açıklama 2"
+                    android:text="Story and Quiz"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp" />
 
@@ -61,6 +61,56 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
                     android:text="PLAY" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/cosmos_logo" />
+
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Level 2"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Word Game"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/lvl2_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Play" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -82,7 +132,7 @@
                     android:layout_width="190dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/logo" />
+                    app:srcCompat="@drawable/choosing" />
 
 
                 <TextView
@@ -91,7 +141,7 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="Başlık 2"
+                    android:text="Level 2"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
@@ -101,17 +151,17 @@
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
-                    android:text="Açıklama 2"
+                    android:text="Situation Game"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp" />
 
                 <Button
-                    android:id="@+id/lvl2_btn"
+                    android:id="@+id/lvl3_btn"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="65dp"
                     android:layout_marginTop="20dp"
-                    android:text="Düğme 2" />
+                    android:text="Play" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

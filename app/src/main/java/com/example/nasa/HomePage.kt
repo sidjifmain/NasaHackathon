@@ -1,8 +1,10 @@
 package com.example.nasa
 
+
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.media.AudioManager
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
@@ -17,6 +19,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.PopupWindow
 import android.widget.Switch
+import android.widget.TextView
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.nasa.databinding.ActivityHomePageBinding
@@ -71,6 +74,7 @@ class HomePage : AppCompatActivity() {
             when(it.itemId){
                 R.id.sound -> soundSetting()
                 R.id.language -> language()
+                R.id.profile_status ->startActivity(Intent(this@HomePage , Quiz::class.java))
             }
             true
         }
@@ -105,7 +109,8 @@ class HomePage : AppCompatActivity() {
     }
 
     fun vr() {
-        replaceFragment(com.example.nasa.VrFragment())
+        replaceFragment(QuickQuiz())
+        friend()
         binding.bottomNavBar.setBackgroundColor(resources.getColor(R.color.primary_color))
         binding.toolbar.setBackgroundColor(resources.getColor(R.color.primary_color))
 
@@ -315,6 +320,29 @@ class HomePage : AppCompatActivity() {
         closeButton.setOnClickListener {
             popupWindow.dismiss()
         }
+    }
+
+    fun friend() {
+        val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val popupView: View = inflater.inflate(R.layout.friend_popup, null)
+
+
+        val popupWindow = PopupWindow(
+            popupView,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            true
+        )
+
+        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)
+
+        // Belirli bir süre sonra otomatik olarak kapat
+        val handler = android.os.Handler()
+        handler.postDelayed({
+            if (popupWindow.isShowing) {
+                popupWindow.dismiss()
+            }
+        }, 3000)
     }
 
 

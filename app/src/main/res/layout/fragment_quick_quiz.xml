@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/variant_back"
+    android:padding="30dp"
+    tools:context=".QuickQuiz">
+
+
+    <Button
+        android:id="@+id/variant_c"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/variant_back"
+        android:elevation="10dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/variant_b"
+        app:layout_constraintStart_toStartOf="@+id/variant_b"
+        app:layout_constraintTop_toBottomOf="@+id/variant_b" />
+
+    <TextView
+        android:id="@+id/quick_quiz_que"
+        android:layout_width="285dp"
+        android:layout_height="198dp"
+        android:gravity="center|top"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/variant_a"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/variant_back"
+        android:elevation="10dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quick_quiz_que" />
+
+    <Button
+        android:id="@+id/variant_b"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/variant_back"
+        android:elevation="10dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/variant_c"
+        app:layout_constraintEnd_toEndOf="@+id/variant_a"
+        app:layout_constraintStart_toStartOf="@+id/variant_a"
+        app:layout_constraintTop_toBottomOf="@+id/variant_a" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quiz_btn_back"
+        android:text="Restart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/variant_c"
+        app:layout_constraintVertical_bias="0.141" />
+</androidx.constraintlayout.widget.ConstraintLayout>

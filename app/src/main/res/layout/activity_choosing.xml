@@ -33,22 +33,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/dogru"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/btn_green"
+        android:background="@drawable/black_btn_back"
         android:padding="8dp"
         android:text=" Astronauts should establish contact with Earth and seek assistance."
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.676" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/yanlis"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
@@ -57,12 +57,12 @@
         android:text="Astronauts should jettison all unnecessary materials from the spacecraft and increase their speed"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="@+id/dogru"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button10" />
+        app:layout_constraintStart_toStartOf="@+id/dogru" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/yanlis2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -71,7 +71,7 @@
         android:text=" Astronauts should try to increase their speed by taking off their space suits."
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="@+id/yanlis"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button11" />
+        app:layout_constraintStart_toStartOf="@+id/yanlis" />
 </androidx.constraintlayout.widget.ConstraintLayout>

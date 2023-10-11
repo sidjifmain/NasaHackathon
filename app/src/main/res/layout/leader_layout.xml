@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:background="@drawable/ok_btn_back"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- Kullanıcı 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/new_yellow"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Kullanıcı Adı -->
+                <TextView
+                    android:id="@+id/textViewUsername1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mehdi"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- XP Puanı -->
+                <TextView
+                    android:id="@+id/textViewXP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XP: 56798"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Kullanıcı 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/new_yellow"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Kullanıcı Adı -->
+                <TextView
+                    android:id="@+id/textViewUsername2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miri"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- XP Puanı -->
+                <TextView
+                    android:id="@+id/textViewXP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XP: 4635"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Kullanıcı 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/new_yellow"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Kullanıcı Adı -->
+                <TextView
+                    android:id="@+id/textViewUsername3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ayxan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!-- XP Puanı -->
+                <TextView
+                    android:id="@+id/textViewXP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XP: 2000"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Daha fazla kullanıcı eklemek isterseniz aynı yapıyı kopyalayabilirsiniz -->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

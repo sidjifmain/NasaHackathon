@@ -18,24 +18,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/btn_back_quiz"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@drawable/baseline_arrow_back_24"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="10dp" />
-
-    </androidx.appcompat.widget.Toolbar>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="371dp"
-        android:layout_height="130dp"
+        android:id="@+id/question"
+        android:layout_width="363dp"
+        android:layout_height="168dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:text="In which year did Neil Armstrong, Buzz Aldrin, and Michael Collins set foot on the Moon during the Apollo 11 mission?"
         android:textColor="@color/black"
@@ -44,67 +34,56 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="128dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginBottom="35dp"
-        android:gravity="center"
-        android:text="Quiz"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
-
     <Button
-        android:id="@+id/button2"
-        android:layout_width="232dp"
-        android:layout_height="70dp"
+        android:id="@+id/btn_a"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button"
         android:text="A) 1969 - Apollo 11"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/question" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="232dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/btn_b"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button"
         android:text="B) 1973 - Apollo 9"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_a" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="232dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="48dp"
+        android:id="@+id/btn_c"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button"
         android:text="C) 1981 - Apollo 5"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_b" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="232dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/btn_d"
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button"
         android:text="D) 1961 - Apollo 11"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_c" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

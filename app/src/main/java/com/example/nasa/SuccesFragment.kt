@@ -1,10 +1,14 @@
 package com.example.nasa
 
 import android.os.Bundle
+import android.util.Log
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupWindow
+import android.widget.Button
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,26 +38,39 @@ class SuccesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_succes, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_succes, container, false)
+
+        // Popup görünümünü başlatmak için bir düğme tıklamasını bekleyin veya otomatik olarak başlatın.
+        val popupButton = rootView.findViewById<Button>(R.id.leader_board)
+
+        popupButton.setOnClickListener {
+
+            showPopup()
+        }
+
+        return rootView
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SuccesFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SuccesFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+
+    private fun showPopup() {
+
+        Log.d("salam" , "salam")
+        val popupView = LayoutInflater.from(requireContext()).inflate(R.layout.leader_layout, null)
+        Log.d("salam" , "salam2")
+        val popupWindow = PopupWindow(
+            popupView,
+            1000,
+            1500,
+
+            true
+        )
+
+        Log.d("salam" , "salam3")
+        popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0)
+
     }
+
+
+
+
 }

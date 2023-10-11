@@ -139,7 +139,7 @@ class StoryPage : AppCompatActivity() {
     fun writeText(text : String , duration: Long , audio : Int){
         val handler = Handler()
 
-        animateTextSlowly(binding.storyText , text , duration , 500)
+        animateTextSlowly(binding.storyText , text , duration , 200)
 
 
         mediaPlayer = MediaPlayer.create(this, audio)
@@ -147,7 +147,7 @@ class StoryPage : AppCompatActivity() {
 
         handler.postDelayed({
             binding.btnNext.visibility = View.VISIBLE
-        }, 3000)
+        }, duration)
     }
 
     fun animateTextSlowly(textView: TextView, text: String, duration: Long, delay: Long) {

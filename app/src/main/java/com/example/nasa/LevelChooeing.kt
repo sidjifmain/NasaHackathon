@@ -26,6 +26,11 @@ class LevelChooeing : AppCompatActivity() {
 
 
         binding.lvl2Btn.setOnClickListener{
+            val intent = Intent(this@LevelChooeing , WordFind::class.java)
+            startActivity(intent)
+        }
+
+        binding.lvl3Btn.setOnClickListener {
             val intent = Intent(this@LevelChooeing , Choosing::class.java)
             startActivity(intent)
         }
